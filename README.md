@@ -1,6 +1,6 @@
 # Palf
 
-This is the repository that contains source code for the [palf website](https://palf.github.io).
+This is the repository that contains source code for the [palf website]([https://palf.github.io](https://richieryu.github.io/palf.github.io/)).
 
 If you find palf useful for your work please cite:
 ```
