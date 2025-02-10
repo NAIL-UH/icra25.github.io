@@ -34,12 +34,26 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@2.0.4/dist/css/bulma-carousel.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@2.0.4/dist/js/bulma-carousel.min.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    bulmaCarousel.attach('#results-carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+      autoplay: false // Videos play automatically, so disable autoplay for carousel
+    });
+  });
+  </script>
+
   
   <style>
     .cover-image img {
