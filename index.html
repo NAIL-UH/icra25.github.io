@@ -61,14 +61,47 @@
       display: block;
       margin: 0 auto;
     }
-  </style>
-  <style>
     .structure-image img {
       max-width: 100%;
       height: auto;
       display: flex;
       margin: 0 auto;
       justify-content: center;
+    }
+    .carousel .carousel-item {
+      width: 100%;
+      height: auto;
+      max-width: 100%;  /* Prevent overflow horizontally */
+      overflow: hidden; /* Hide any overflow outside the box */
+    }
+
+    .carousel-item video {
+      width: 100%;   /* Make video fill the container's width */
+      height: auto;  /* Maintain aspect ratio */
+      object-fit: cover; /* Optionally crop the video to fill the space */
+    }
+
+    #results-carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-item {
+      display: none;
+    }
+
+    .carousel-item.is-active {
+      display: block;
+    }
+
+    .hero-body {
+      padding: 20px; /* Adjust padding as needed */
+    }
+
+    .container {
+      margin: 0 auto; /* Centers the container */
+      max-width: 100%;
     }
   </style>
   
