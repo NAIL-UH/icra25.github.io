@@ -53,26 +53,6 @@
     });
   });
   </script>
-
-  <script>
-$(document).ready(function(){
-  $('#results-carousel').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false
-  });
-
-  // Pause videos when not active
-  $('#results-carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    var videos = $('#results-carousel video');
-    videos.each(function(){
-      this.pause();  // Pause all videos
-    });
-    $(videos[nextSlide]).get(0).play(); // Play the upcoming video
-  });
-});
-</script>
   
   <style>
     .cover-image img {
