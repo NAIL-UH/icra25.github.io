@@ -349,7 +349,13 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <p>
-                Discuss the plots here 
+                The first simulation evaluates the proposed perception-aware safe leader-follower control scheme in an oval track environment and is compared to 
+                a baseline that only applies the leader-follower formation controller. The system is evaluated in three stages: (i) an initial straight-line formation
+                where the follower remains directly behind the leader, (ii) a formation transition where the follower moves to the side of the leader, introducing a
+                conflict between control objectives and safety constraints, and (iii) a return to the initial straight-line formation. The proposed approach successfully
+                resolve this conflict by adaptively activating the CBF-QP safety filter to maintain the leader within its FOV, while the baseline system fails to do so, resulting
+                in the loss of the leader causing instability. These results demonstrate the control scheme's effectiveness in maintaining formation and safety constraints.
+                
               </p>
             </tr>
           </table>
@@ -377,7 +383,10 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <p>
-                Discuss the plots here 
+                The second simulation evaluates the generalization capability of the proposed perception-aware control scheme and the DNN-based estimator, the second experiment is conducted
+                in an unseen outdoor residence environment. Despite being trained exclusively in the oval track setting, the estimator is able to generalize its environement effectively, providing
+                an accurate estimation that enables the proposed controller to maintain desired formation and safety constraints. The baseline approach, fails to adapt to the environmental differences,
+                leading to the loss of the leader causing instability. This simulation validates the robustness of the proposed estimator to ensure a robust and reliable leader-follower formation.
               </p>
             </tr>
           </table>
@@ -405,7 +414,9 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <p>
-                Discuss the plots here 
+                The third experiment evaluates the proposed control scheme in a three-robot leader-follower formation within the oval track environment. In this setting,
+                the last robot is susceptible to the safety violations due to the error propagation and disturbances caused by the preceding robots. This demonstration shows
+                that the robot not utilizing the proposed approach fails almost immediately in Stage 1. In contrast, the proposed approach successfully preserves the safety.
               </p>
             </tr>
           </table>
