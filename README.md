@@ -1,8 +1,8 @@
 # Palf
 
-This is the repository that contains source code for the [palf website]((https://richieryu.github.io/palf.github.io/)
+This is the repository that contains source code for the [PALF website](https://richieryu.github.io/palf.github.io).
 
-If you find palf useful for your work please cite:
+If you find PALF useful for your work please cite:
 ```
 @article{suganda2024distributed,
   title={Distributed Perception Aware Safe Leader Follower System via Control Barrier Methods},
