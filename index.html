@@ -297,10 +297,9 @@
           <p>
             Using a <i>Deep Neural Network</i> we measure the bearing angle between each agent using image data.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+          <div class="structure-image">
+            <img src="https://raw.githubusercontent.com/RichieRyu/palf.github.io/main/static/images/DNN.jpg" alt="DNN Image">
+          </div>
         </div>
       </div>
       <!--/ Visual Effects. -->
@@ -313,10 +312,9 @@
             <p>
               Using a RGBD-Camera and a CSRT tracker we measure the distance between each agent.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+            <div class="structure-image">
+              <img src="https://raw.githubusercontent.com/RichieRyu/palf.github.io/main/static/images/CSRT.jpg" alt="CSRT Image">
+            </div>
           </div>
 
         </div>
@@ -473,22 +471,34 @@
         <!-- Experiment. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-4">Experiment</h3>
-        <div class="content has-text-centered">
-          <p>
-            Our Leader-Follower system in action using the real robot!
-          </p>
+        <h3 class="title is-4">Preliminarary Experiments</h3>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column  has-text-centered">
+            <h5><b>Comparison</b><br>for Experiment with two Agents<br>(with CBF)</h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls muted loop playsinline width="80%">
+              <source src="static/videos/Exp1_with.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column  has-text-centered">
+            <h5><b>Comparison</b><br>for Experiment with two Agents<br>(without CBF)</h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls muted loop playsinline width="80%">
+              <source src="static/videos/Exp1_without.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="45%">
-            <source src="./static/videos/Exp1.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="content has-text-justified">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <p>
+                The video presents preliminary experiments demonstrating the effectiveness of the proposed control scheme. 
+                In these tests, state estimation is provided by an external OptiTrack system, allowing for accurate evaluation of the controller's performance. 
+                The results clearly illustrate that the proposed control scheme successfully maintains the leader agent within the follower’s field of view, 
+                validating its ability to enforce visibility constraints
+              </p>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
