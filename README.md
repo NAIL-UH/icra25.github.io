@@ -1,14 +1,15 @@
-# Palf
+# ICRA2025
 
-This is the repository that contains source code for the [PALF website](https://richieryu.github.io/palf.github.io).
+This is the repository that contains source code for the [PALF website]([https://richieryu.github.io/palf.github.io](https://github.com/RichieRyu/Distributed-Perception-Aware-Safe-Leader-Follower-System-via-Control-Barrier-Methods)).
 
 If you find PALF useful for your work please cite:
 ```
-@article{suganda2024distributed,
-  title={Distributed Perception Aware Safe Leader Follower System via Control Barrier Methods},
-  author={Suganda, Richie R and Tran, Tony and Pan, Miao and Fan, Lei and Lin, Qin and Hu, Bin},
-  journal={arXiv preprint arXiv:2409.11394},
-  year={2024}
+@inproceedings{suganda2024distributed,
+  author    = {R. R. Suganda and T. Tran and M. Pan and L. Fan and Q. Lin and B. Hu},
+  title     = {Distributed Perception Aware Safe Leader Follower System via Control Barrier Methods},
+  booktitle = {Proc. IEEE Int. Conf. on Robotics and Automation (ICRA)},
+  year      = {2025},
+  address   = {Atlanta, US},
 }
 ```
 
