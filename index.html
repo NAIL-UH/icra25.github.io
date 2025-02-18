@@ -227,13 +227,13 @@
         <div class="content has-text-justified">
           <p>
             This paper addresses a distributed leader-follower formation control problem for a group of agents, 
-            each using a body-fixed camera with a limited field of view(FOV) for state estimation.
+            each using a body-fixed camera with a limited field of view (FOV) for state estimation.
           </p>
           <p>
             The main challenge arises from the need to coordinate the agents' movements with their cameras' FOV
             to maintain visibility of the leader for accurate and reliable state estimation. To address this challenge, 
             we propose a novel perception-aware distributed leader-follower safe control scheme that incorporates FOV 
-            limits as state constraints. A Control Barrier Function(CBF) based quadratic program is employed to ensure 
+            limits as state constraints. A Control Barrier Function (CBF) based quadratic program is employed to ensure 
             the forward invariance of a safety set defined by these constraints. Furthermore, new neural network based 
             and double bounding boxes based estimators, combined with temporal filters, are developed to estimate system 
             states directly from real-time image data, providing consistent performance across various environments.
@@ -313,14 +313,14 @@
         <h3 class="title is-4">Simulation 1: Two-Robot Leader-follower Formation in Oval Track Environment</h3>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Two Robot Simulation in Oval Track<br>(with CBF)</h5>
+            <h5><b>With CBF</b><br>(In-View Safe Tracking)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/2Oval-with.mp4" type="video/mp4">
             </video>
           </div>
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Two Robot Simulation in Oval Track<br>(without CBF)</h5>
+            <h5><b>Without CBF</b><br>(Out-of-View Crash)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/2Oval-without.mp4" type="video/mp4">
@@ -344,17 +344,17 @@
           </table>
         </div>
     
-        <h3 class="title is-4">Simulation 2: Two Robots in Outdoor Residence Environment</h3>
+        <h3 class="title is-4">Simulation 2: Two-robot Leader-follower Formation in Outdoor Residence Environment</h3>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Two Robot Simulation in Outdoor Residence Environment<br>(with CBF)</h5>
+            <h5><b>With CBF</b><br>(In-View Safe Tracking)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/2Outdoor-with.mp4" type="video/mp4">
             </video>
           </div>
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Two Robot Simulation in Outdoor Residence Environment<br>(without CBF)</h5>
+            <h5><b>Without CBF</b><br>(Out-of-View Crash)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/2Outdoor-without.mp4" type="video/mp4">
@@ -375,17 +375,17 @@
           </table>
         </div>
     
-        <h3 class="title is-4">Simulation 3: Three Robots in an Oval Track</h3>
+        <h3 class="title is-4">Simulation 3: Three-robot Leader-follower Formation in an Oval Track Environment</h3>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Three Robot Simulation in Oval Track<br>(with CBF)</h5>
+            <h5><b>With CBF</b><br>(In-View Safe Tracking)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/3Oval-with.mp4" type="video/mp4">
             </video>
           </div>
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Three Robot Simulation in Oval Track<br>(without CBF)</h5>
+            <h5><b>Without CBF</b><br>(Out-of-View Crash)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/3Oval-without.mp4" type="video/mp4">
@@ -406,17 +406,17 @@
         </div>
 
         <!-- Experiment. -->
-        <h2 class="title is-4">Preliminarary Experiments</h2>
+        <h2 class="title is-3">Experiments with Two ROSbot Pro Mobile Robots</h2>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Experiment with two Agents<br>(with CBF)</h5>
+            <h5><b>With CBF</b><br>(In-View Safe Tracking)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/Exp1_with.mp4" type="video/mp4">
             </video>
           </div>
           <div class="column  has-text-centered">
-            <h5><b>Comparison</b><br>for Experiment with two Agents<br>(without CBF)</h5>
+            <h5><b>Without CBF</b><br>(Out-of-View Unsafe Tracking)<br></h5>
             <h5 style="font-size:30px;">✅</h5>
             <video autoplay controls muted loop playsinline width="80%">
               <source src="static/videos/Exp1_without.mp4" type="video/mp4">
@@ -427,10 +427,8 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <p>
-                The video presents preliminary experiments demonstrating the effectiveness of the proposed control scheme. 
-                In these tests, state estimation is provided by an external OptiTrack system, allowing for accurate evaluation of the controller's performance. 
-                The results clearly illustrate that the proposed control scheme successfully maintains the leader agent within the follower’s field of view, 
-                validating its ability to enforce visibility constraints
+               Experiments using two ROSbot Pro 2 robots confirm that our perception-aware leader-follower control scheme consistently keeps the leader within the follower's field of view, ensuring safe, in-view tracking. In contrast, the traditional formation control strategy without CBF loses the leader, resulting in unsafe, out-of-view tracking. 
+                Note that these experiments employed an OptiTrack Motion Capture System for state estimation as a proof-of-concept, with future tests incorporating DNN and DBB-based estimators.
               </p>
             </tr>
           </table>
