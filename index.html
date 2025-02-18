@@ -261,7 +261,7 @@
             <p style="text-align: left;">
  We propose a novel perception-aware, distributed leader-follower control scheme that explicitly incorporates camera FOV limitations as state constraints. 
               A CBF-QP framework is employed to enforce forward invariance of a safety set defined by these constraints. 
-              Neural network based and double bounding boxes based estimators combined with temporal filters are introduced to obtain reliable estimates for leader-follower states across different environments. 
+              Deep Neural network (DNN) based and double bounding boxes (DBB) based estimators combined with temporal filters are introduced to obtain reliable estimates for leader-follower states across different environments. 
           </p>
       </div>
     </div>
@@ -280,7 +280,7 @@
         <div class="content">
           <h2 class="title is-3">DNN Angle Estimation</h2>
           <p>
-            Using a <i>Deep Neural Network</i> we measure the bearing angle between each agent using image data.
+           A DNN-based estimator, combined with a linear temporal filter, maps real-time image data to angle estimates by framing the estimation task as an image classification problem.
           </p>
           <div class="structure-image">
             <img src="https://raw.githubusercontent.com/RichieRyu/palf.github.io/main/static/images/DNN.jpg" alt="DNN Image">
