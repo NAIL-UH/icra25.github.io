@@ -293,7 +293,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Using a RGBD-Camera and a CSRT tracker we measure the distance between each agent.
+              The DBB method uses a CSRT tracker on the RGB image to generate a red bounding box that locates the leader, then scales it to half its dimensions on the depth image as a green bounding box to estimate the distance.
             </p>
             <div class="structure-image">
               <img src="https://raw.githubusercontent.com/RichieRyu/palf.github.io/main/static/images/CSRT.png" alt="CSRT Image">
