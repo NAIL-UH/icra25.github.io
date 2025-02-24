@@ -1,6 +1,6 @@
 # ICRA2025
 
-This is the repository that contains source code for the [PALF website](https://github.com/RichieRyu/Distributed-Perception-Aware-Safe-Leader-Follower-System-via-Control-Barrier-Methods).
+This is the repository that contains source code for the [ICRA2025 website](https://nail-uh.github.io/icra25.github.io/).
 
 If you find PALF useful for your work please cite:
 ```
